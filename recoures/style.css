@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  background-color: #e8280b;
+  height: 75px;
+  
+  
+}
+
+.follow {
+  color: white;
+  font-size: 40px;
+}
+
+.follow a {
+  color: white;
+}
+
+/*========================Feature==========================*/
+#feature {
+  margin-top: 30px;
+}
+#feature .container-fluid {
+ align-items: flex-start;
+ max-height: 100%;
+}
+
+.feature-left {
+  width: 60%;
+  max-height: 100%;
+}
+
+.feature-right {
+  width: 30%;
+}
+
+/*---------------------- Nav bar-----------------------------------*/
+.navbar {
+  height: 75px;
+  border-bottom: 1px solid #cccccc;
+}
+.container-fluid {
+  width: 80%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.title:hover {
+    color: red;
+}
+
+.highlights {
+  width: 80%;
+  margin-left: 10%;
+  border-top: 4px solid #cccccc;
+}
+
+h4 {
+  height: 40px;
+  padding: 7px 0px 13px 0px;
+}
+
+.left-side,
+.right-side {
+  width: 45%;
+  margin-top: 20px;
+}
+.category {
+    color: #cccccc;
+}
+.posts img {
+  width: 100%;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.posts {
+    margin-bottom: 40px;
+}
+
+.post-info {
+    width: 30%;
+    height: 30px;
+    border: 1px solid #cccccc;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+/*--------------------- TRENDING --------------------------------*/
+
+.trending {
+    width: 80%;
+  margin-left: 10%;
+  border-top: 4px solid #cccccc;
+}
+
+.columns {
+    width: 23%;
+}
+
+.trending-posts {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+.trending-posts img {
+    width: 100%;
+}
+
+.date {
+    color: #cccccc;
+}
+
+
+
+
+
+
+
+/*================== Footer=======================*/
+
+footer {
+  height: 50px;
+  background-color: #1e1e1e;
+  color: #949494;
+  padding: 15px 141px;
+}
