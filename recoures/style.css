@@ -21,21 +21,27 @@
   color: white;
 }
 
-/*========================Feature==========================*/
-#feature {
-  margin-top: 30px;
-}
-#feature .container-fluid {
- align-items: flex-start;
- max-height: 100%;
+/*========================NEW==========================*/
+#new {
+  margin-top: 10px;
 }
 
-.feature-left {
+#new h4 {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#new .container-fluid {
+overflow: hidden;
+align-items: flex-start;
+}
+
+.left{
   width: 60%;
   max-height: 100%;
 }
 
-.feature-right {
+.right {
   width: 30%;
 }
 
@@ -53,20 +59,10 @@
 }
 
 
-a{
-    text-decoration: none;
-}
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-}
 
-.title:hover {
-    color: red;
-}
+/*=====================Highlights=======================*/
 
-.highlights {
+#highlights {
   width: 80%;
   margin-left: 10%;
   border-top: 4px solid #cccccc;
@@ -77,22 +73,18 @@ h4 {
   padding: 7px 0px 13px 0px;
 }
 
-.left-side,
-.right-side {
+#highlights .left-side,
+#highlights .right-side {
   width: 45%;
   margin-top: 20px;
 }
-.category {
+.author {
     color: #cccccc;
 }
 .posts img {
   width: 100%;
 }
-.section {
-  display: flex;
-  justify-content: space-between;
 
-}
 
 .posts {
     margin-bottom: 40px;
@@ -104,37 +96,120 @@ h4 {
     border: 1px solid #cccccc;
     /* display: flex;
     justify-content: space-between; */
+
+}
+
+a{
+  text-decoration: none;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.title:hover {
+  color: red;
 }
 
 /*--------------------- TRENDING --------------------------------*/
 
-.trending {
+#trending {
     width: 80%;
   margin-left: 10%;
   border-top: 4px solid #cccccc;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .columns {
     width: 23%;
 }
 
-.trending-posts {
+/* .trending-posts {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #cccccc;
 }
 .trending-posts img {
     width: 100%;
-}
+} */
 
 .date {
     color: #cccccc;
 }
 
 
+/*==================EDITOR PICK=====================*/
+#editor-pick {
+  width: 80%;
+  margin-left: 10%;
+  border-top: 4px solid #cccccc;
+}
+
+.article {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.thumb {
+  width: 40%;
+}
+
+.thumb img {
+  width: 90%;
+  
+
+}
+
+#editor-pick .posts {
+  width: 45%;
+}
 
 
 
+
+/*==================Widget=====================*/
+
+#widget {
+  background-color: #252525;
+  color: #b0b1b4;
+  height: 350px;
+  padding-top: 50px;
+}
+
+.col-4 p, .col-3 p, .col-2 p {
+  margin-top: 10px;
+}
+
+.col-4 img {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.row {
+  width: 85%;
+  margin-left: 10%;
+
+}
+
+h6 {
+  color: white;
+}
+
+.col-3 .fas {
+margin-right: 10px;
+}
+
+
+.col-2 ul {
+  list-style: none;
+  padding-left: 0;
+}
 
 
 /*================== Footer=======================*/
@@ -143,5 +218,8 @@ footer {
   height: 50px;
   background-color: #1e1e1e;
   color: #949494;
-  padding: 15px 141px;
+  padding: 15px 145px;
 }
+
+
+
