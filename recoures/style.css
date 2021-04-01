@@ -26,29 +26,79 @@
   margin-top: 10px;
 }
 
-#new h4 {
+.new-title {
   width: 80%;
+  border-bottom: 2px solid #bd2109;
   margin-left: 10%;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+
+
+#new h4 {
+  width: 80px;
+  text-align: center;
+  color: white;
+  background-color: #bd2109;
+  margin-bottom: 0px;
 }
 
 #new .container-fluid {
 overflow: hidden;
-align-items: flex-start;
+align-items: unset;
 }
 
 .left{
-  width: 60%;
-  max-height: 100%;
+  width: 58%;
+  height: 500px;
+  background-image: url(https://cdn.shopify.com/s/files/1/2253/4777/files/best-iphone-wallpapers-from-pinterest-talmo-charging-cable_1024x1024.jpg?v=1514982511);
+  /* background-size: cover; */
+  background-position: center;
+  position: relative;
+}
+
+.left .posts, .right-above .posts, .right-under .posts {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(27,23,23,0.2);
+  padding: 20px 15px 10px 15px;
+}
+
+#new a:hover {
+  text-decoration: underline;
+  color: white;
+
 }
 
 .right {
-  width: 30%;
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-above {
+  background-image: url(https://peopleofcolorintech.com/wp-content/uploads/2017/11/15zB1xm72plxOzsmfUeVZNA-2.jpeg) ;
+  height: 244px;
+  background-position: center;
+  position: relative;
+}
+
+
+.right-under {
+  background-image: url(https://genk.mediacdn.vn/139269124445442048/2020/12/22/photo-2-1608614299386842803159.jpg);
+  height: 244px;
+  background-position: center;
+  position: relative;
 }
 
 /*---------------------- Nav bar-----------------------------------*/
 .navbar {
   height: 75px;
   border-bottom: 1px solid #cccccc;
+  
 }
 .container-fluid {
   width: 80%;
@@ -58,6 +108,12 @@ align-items: flex-start;
   align-items: center;
 }
 
+.nav-link {
+  color: black;
+  font-size: 19px;
+  margin-top: 8px;
+}
+
 
 
 /*=====================Highlights=======================*/
@@ -65,44 +121,69 @@ align-items: flex-start;
 #highlights {
   width: 80%;
   margin-left: 10%;
-  border-top: 4px solid #cccccc;
+  
 }
 
-h4 {
-  height: 40px;
-  padding: 7px 0px 13px 0px;
+.category {
+  margin: 20px 0px;
+  border-bottom: 2px solid #bd2109;
+}
+
+.category h4 {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: #bd2109;
+  margin-bottom: 0px;
 }
 
 #highlights .left-side,
 #highlights .right-side {
-  width: 45%;
-  margin-top: 20px;
+  width: 37%;
+  
+}
+
+.ads {
+  width: 22%;
+  background-image: url(https://www.emcmarketing.com/images/ad_rates/samples/generic/1-2-vertical.jpg);
+}
+
+.left-side .posts, .right-side .posts {
+  height: 405px;
+  overflow: visible;
+  border: 1px solid #cccccc;
+  margin-bottom: 15px;
+}
+
+.right-side .posts img {
+  max-height: 240px;
 }
 .author {
     color: #cccccc;
+    margin-bottom: 4px;
+}
+
+.hl-text{
+  margin-left: 10px;
 }
 .posts img {
   width: 100%;
-}
 
-
-.posts {
-    margin-bottom: 40px;
 }
 
 .post-info {
-    width: 30%;
+    width: 40px;
     height: 30px;
-    border: 1px solid #cccccc;
-    /* display: flex;
-    justify-content: space-between; */
-
+    font-size: 18px;
 }
 
 a{
   text-decoration: none;
+  color: #bd2109;
 }
 .title {
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
   color: black;
@@ -117,7 +198,8 @@ a{
 #trending {
     width: 80%;
   margin-left: 10%;
-  border-top: 4px solid #cccccc;
+  margin-bottom: 40px;
+ 
 }
 
 .section {
@@ -130,6 +212,16 @@ a{
     width: 23%;
 }
 
+.columns img {
+  width: 100%;
+}
+
+#trending .posts {
+  height: 120px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+}
 /* .trending-posts {
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -139,8 +231,8 @@ a{
     width: 100%;
 } */
 
-.date {
-    color: #cccccc;
+#trending .title {
+  font-size: 18px;
 }
 
 
@@ -148,12 +240,13 @@ a{
 #editor-pick {
   width: 80%;
   margin-left: 10%;
-  border-top: 4px solid #cccccc;
+  
 }
 
 .article {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  width: 90%;
 }
 
 .thumb {
@@ -161,13 +254,15 @@ a{
 }
 
 .thumb img {
-  width: 90%;
-  
-
+  width: 95%;
 }
 
 #editor-pick .posts {
   width: 45%;
+}
+
+.article .title {
+  font-size: 22px;
 }
 
 
@@ -210,6 +305,17 @@ margin-right: 10px;
   list-style: none;
   padding-left: 0;
 }
+li {
+  margin-bottom: 10px;
+}
+
+#widget a {
+  color: #cccccc;
+}
+
+#widget a:hover {
+  text-decoration: underline;
+}
 
 
 /*================== Footer=======================*/
@@ -222,4 +328,24 @@ footer {
 }
 
 
+#myBtn {
+  width: 45px;
+  height: 45px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  
+  border-radius: 50px;
+}
 
+#myBtn:hover {
+  background-color: #555;
+}
